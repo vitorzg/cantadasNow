@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imgs/loguinho_semfundo.png" type="image/x-icon">
     <title>CantadasNow</title>
 </head>
 <body>
     
-    <header>
-
-    </header>
     <main>
         <fieldset>
-            <img src="#" alt="imagemlogo">
+            <img id="imagemlogo" src="./imgs/logao_escrito.png" alt="imagemlogo">
             <form action="sucesso.php" method="post">
-                <label for="inputcantada">Escreva sua cantada:</label>
-                <textarea name="inputcantada" id="inputcantada" cols="30" rows="10" maxlength="255" required></textarea>
+                <label for="inputcantada">Escreva sua cantada :</label>
+                <textarea name="inputcantada" id="inputcantada" cols="30" rows="10" maxlength="255" required placeholder="Gata, você é tão..."></textarea>
                 <button type="submit">Enviar Cantada</button>
             </form>
             <a href="gerado.php">Gerar uma cantada !</a>
