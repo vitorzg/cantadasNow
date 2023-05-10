@@ -1,11 +1,11 @@
 <?php
-    require_once "./classes/Conexao.php";
+    require_once "../classes/Conexao.php";
 
     session_start();
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $_POST['user'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         $db = new Database();
         $query = "SELECT iD_User FROM usuarios WHERE user = '$user' AND senha = '$password'";

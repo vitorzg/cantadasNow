@@ -1,6 +1,6 @@
 <?php
 
-    include("classes/Cantada.php");
+    include("../classes/Cantada.php");
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
